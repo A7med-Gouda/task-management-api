@@ -17,5 +17,5 @@ A simple task management REST API built using **FastAPI**, **Pydantic**, and **S
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/task-management-api.git
+git clone https://github.com/A7med-Gouda/task-management-api.git
 cd task-management-api
