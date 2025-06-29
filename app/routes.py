@@ -67,7 +67,7 @@ def get_tasks_by_priority(priority: TaskPriority, session: Session = Depends(get
     tasks = session.exec(select(Task).where(Task.priority == priority)).all()
     return tasks
 
-# 
+
 @router.get("/tasks/search", response_model=List[TaskResponse])
 def search_tasks(q: str, session: Session = Depends(get_session)):
     query = select(Task).where(
