@@ -16,6 +16,8 @@ def root():
 def health():
     return {"status": "ok"}
 
+
+
 @router.post("/tasks", response_model=TaskResponse, status_code=201)
 def create(task: TaskCreate, session: Session = Depends(get_session)):
     return create_task(session, task)
